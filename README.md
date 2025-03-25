@@ -26,6 +26,8 @@ $$vii. \ ((q,b,x)(q,bx))$$
 
 $$L(M) = \{a^{2^n} b^{2^{m+1}} \mid n \geq 0 \land m \geq 0\}^{*} - \{\varepsilon\}$$
 
+$$L(M) = \left\{ \left(a^{2n} b^{2m+1} \right)^* \mid n \geq 1, m \geq 0 \right\} - \{\epsilon\}$$
+
 #include "Ubidots.h"
 #include <Wire.h>
 #include <Adafruit_MPU6050.h>
