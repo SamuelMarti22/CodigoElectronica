@@ -26,7 +26,9 @@ $$vii. \ ((q,b,x)(q,bx))$$
 
 $$L(M) = \{a^{2^n} b^{2^{m+1}} \mid n \geq 0 \land m \geq 0\}^{*} - \{\varepsilon\}$$
 
-<img src="https://latex.codecogs.com/svg.latex?\color{white}L(M)%20=%20\left\{%20\left{a^{2n}%20b^{2m+1}%20\right}^*%20\mid%20n%20\geq%201,%20m%20\geq%200%20\right\}%20-%20\{\epsilon\}" />
+<img src="https://latex.codecogs.com/svg.latex?\color{white}L(M)%20=%20\left\{%20\left(a^{2n}%20b^{2m+1}%20\right)^*%20\mid%20n%20\geq%201,%20m%20\geq%200%20\right\}%20-%20\{\epsilon\}" />
+
+<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}G=(N,\Sigma,P,S),\quad N=\{S,A,B,X\},\quad \Sigma=\{a,b\},\quad P=\{S\to ABX,\quad A\to aaA\mid aa,\quad B\to bbB\mid b\}" />
 
 #include "Ubidots.h"
 #include <Wire.h>
