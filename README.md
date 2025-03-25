@@ -36,7 +36,7 @@ $$L(M) = \{a^{2^n} b^{2^{m+1}} \mid n \geq 0 \land m \geq 0\}^{*} - \{\varepsilo
 
 <img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}\Sigma=\{a,b\}" />
 
-<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}P=\{S\to ABX\}" />
+<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}P=S\to ABX" />
 
 <img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}A\to aaA\mid aa" />
 
