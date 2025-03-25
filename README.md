@@ -24,6 +24,8 @@ $$v. \ ((q,a,\epsilon )(q,abx))$$
 $$vi. \ ((q,a,x)(q,ab))$$
 $$vii. \ ((q,b,x)(q,bx))$$
 
+$$L(M) = { a^{2^n} b^{2^{m+1}} \mid n \geq 0 \wedge m \geq 0} - \{\epsilon\}$$
+
 #include "Ubidots.h"
 #include <Wire.h>
 #include <Adafruit_MPU6050.h>
