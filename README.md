@@ -24,7 +24,7 @@ $$v. \ ((q,a,\epsilon )(q,abx))$$
 $$vi. \ ((q,a,x)(q,ab))$$
 $$vii. \ ((q,b,x)(q,bx))$$
 
-$$L(M) = \{a^{2^n} b^{2^{m+1}} \mid n \geq 0 \land m \geq 0\} - \{\varepsilon\}$$
+$$L(M) = \{a^{2^n} b^{2^{m+1}} \mid n \geq 0 \land m \geq 0\}^{*} - \{\varepsilon\}$$
 
 #include "Ubidots.h"
 #include <Wire.h>
