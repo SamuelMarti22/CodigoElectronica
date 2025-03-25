@@ -2,6 +2,15 @@
 
 $E = \frac{1}{2}mv^2$
 
+$$
+G=(N,\Sigma,P,S)
+N=\left\{ S,A,B,X\right\}
+\Sigma=\left\{ a,b\right\}
+P=\left\{ S \to  ABX
+A \to  aaA | aa
+B \to bbB | b
+$$
+
 #include "Ubidots.h"
 #include <Wire.h>
 #include <Adafruit_MPU6050.h>
