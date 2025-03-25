@@ -30,6 +30,18 @@ $$L(M) = \{a^{2^n} b^{2^{m+1}} \mid n \geq 0 \land m \geq 0\}^{*} - \{\varepsilo
 
 <img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}G=(N,\Sigma,P,S),\quad N=\{S,A,B,X\},\quad \Sigma=\{a,b\},\quad P=\{S\to ABX,\quad A\to aaA\mid aa,\quad B\to bbB\mid b\}" />
 
+<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}G=(N,\Sigma,P,S)" />
+
+<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}N=\{S,A,B,X\}" />
+
+<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}\Sigma=\{a,b\}" />
+
+<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}P=\{S\to ABX\}" />
+
+<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}A\to aaA\mid aa" />
+
+<img src="https://latex.codecogs.com/svg.latex?\bg_black\color{white}B\to bbB\mid b" />
+
 #include "Ubidots.h"
 #include <Wire.h>
 #include <Adafruit_MPU6050.h>
