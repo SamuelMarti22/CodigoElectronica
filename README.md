@@ -2,14 +2,12 @@
 
 $E = \frac{1}{2}mv^2$
 
-$$
-G=(N,\Sigma,P,S)\\newline
-N={S,A,B,X}\\newline
-\Sigma={a,b}\\newline
-P={ S \to  ABX\\newline
-A \to  aaA | aa\\newline
-B \to bbB | b}
-$$
+$G=(N,\Sigma,P,S)$
+$N={S,A,B,X}$
+$\Sigma={a,b}\\newline$
+$P={ S \to  ABX\\newline$
+$A \to  aaA | aa\\newline$
+$B \to bbB | b}$
 
 #include "Ubidots.h"
 #include <Wire.h>
