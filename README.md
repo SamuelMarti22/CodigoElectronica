@@ -1,5 +1,7 @@
 # CodigoElectronica
 
+$E = \frac{1}{2}mv^2$
+
 #include "Ubidots.h"
 #include <Wire.h>
 #include <Adafruit_MPU6050.h>
