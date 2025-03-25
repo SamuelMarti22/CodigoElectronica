@@ -9,6 +9,13 @@ $$P= S \to  ABX\\newline$$
 $$A \to  aaA | aa\\newline$$
 $$B \to bbB | b$$
 
+$$N=(Q,\Sigma,\Gamma,\delta, S,F)$$
+$$Q={q}$$
+$$\Sigma={a,b\right\}$$
+$$\Gamma ={a,b}$$
+$$S={q}$$
+$$F=\phi$$
+
 #include "Ubidots.h"
 #include <Wire.h>
 #include <Adafruit_MPU6050.h>
