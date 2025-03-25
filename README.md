@@ -16,6 +16,14 @@ $$\Gamma ={a,b}$$
 $$S={q}$$
 $$F=\phi$$
 
+$$\delta=i.\;  ((q,a,b)(q,ab))$$
+$$ii.\;  ((q,a,a)(q,\epsilon ))$$
+$$iii. \; ((q,b,\epsilon )(q,b))$$
+$$iv. \; ((q,b,b)(q,\epsilon ))$$
+$$v. \; ((q,a,\epsilon )(q,abx))$$
+$$vi. \; ((q,a,x)(q,ab))$$
+$$vii. \; ((q,b,x)(q,bx))$$
+
 #include "Ubidots.h"
 #include <Wire.h>
 #include <Adafruit_MPU6050.h>
