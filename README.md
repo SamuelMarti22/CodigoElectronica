@@ -4,11 +4,11 @@ $E = \frac{1}{2}mv^2$
 
 $$
 G=(N,\Sigma,P,S)
-N=\left\{ S,A,B,X\right\}
-\Sigma=\left\{ a,b\right\}
-P=\left\{ S \to  ABX
+N={S,A,B,X}
+\Sigma={a,b}
+P={ S \to  ABX
 A \to  aaA | aa
-B \to bbB | b
+B \to bbB | b}
 $$
 
 #include "Ubidots.h"
