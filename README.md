@@ -11,7 +11,7 @@ $$B \to bbB | b$$
 
 $$N=(Q,\Sigma,\Gamma,\delta, S,F)$$
 $$Q={q}$$
-$$\Sigma={a,b\right\}$$
+$$\Sigma={a,b}$$
 $$\Gamma ={a,b}$$
 $$S={q}$$
 $$F=\phi$$
