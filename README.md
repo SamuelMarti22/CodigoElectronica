@@ -78,9 +78,7 @@ $$S \to  Sa \\newline$$
 $$S \to  aA |aB \\newline$$
 $$A \to  d \\newline$$
 $$B \to  c \\newline$$
-$$S \to  iaT | ieT\\newline$$
-$$First(iaT)={i}\\newline$$
-$$First(ieT)={i}\\newline$$
+
 
 
 
