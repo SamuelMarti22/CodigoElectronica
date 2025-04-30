@@ -29,33 +29,47 @@ In this assignment, the step-by-step process of analyzing a set of strings using
 
 ## Instructions for Running ▶️
 
-1. Clone the repository:
-    ```bash
-    git clone <repository-url>
-    ```
+## Instructions for running ▶️🏃‍♂️
 
-2. Navigate to the project directory:
-    ```bash
-    cd <project-directory>
-    ```
-
-3. Install the required libraries:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run the script to start the analysis:
-    ```bash
-    python main.py
-    ```
-
----
+- 1. Install pandas. To do this, type the following command in the terminal:
+```
+pip install pandas
+```
+- 2. Install Graphviz. To do this, type the following command in the terminal:
+```
+sudo apt-get update
+sudo apt-get install graphviz
+pip install graphviz
+```
+- 3. Run the main file
 
 ## LL(1) Top-Down Parser 📝
 
 ### Explanation of the Parser 📖
 
 The LL(1) parser is a **top-down** parsing method that reads input from **left to right**, constructing the parse tree from **top to bottom** using **one lookahead symbol** to make decisions.
+
+$$
+\begin{array}{c}
+         S \\
+       / | \ \\
+      A\ B\ X \\
+    /    \\
+ aa\ \ \ aa\ \ bb
+\end{array}
+$$
+
+En el este ejemplo partimos desde el Simbolo incial S, que produce A B X, tomara la izquierda y hará la derivación sintactica posible hasta llegar a un terminal como se ve con aa, después retomara con B y realizará nuevamente el proceso, hasta terminar con cada No terminal previsto, si notamos el flujo va procesando desde la parte superios hasta la inferios de left to right. 
+
+Para poder hacer un LL(1) parser is a **Top-Down** se deben cumplir las siguientes reglas:
+
+-Ambiguedades: Una regla de producción no puede tener first iguales
+
+$$S \to  iaT | ieT\\newline$$
+$$First(iaT)={i}\\newline$$
+$$First8ieT={a,b}\\newline$$
+
+
 
 ### Code for Developing It 💻
 
