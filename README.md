@@ -58,6 +58,7 @@ $$
  aa\ \ \ aa\ \ 
 \end{array}
 $$
+
 In this example, we start from the initial symbol **S**, which produces **A B X**. The parser will take the leftmost non-terminal (**A**) and perform the possible syntactic derivation until it reaches a terminal symbol, as seen with `aa`. Then, it will continue with **B** and repeat the process, until all non-terminals have been derived. As we can observe, the parsing flow goes from top to bottom and from left to right (**Top-Down, Left-to-Right**).
 
 To build an **LL(1)** parser (i.e., **Top-Down** with **1 lookahead**), the following rules must be satisfied:
