@@ -53,9 +53,9 @@ $$
 \begin{array}{c}
          S \\
        / | \ \\
-      A\ B\ X \\
+      A\ B\ x \\
     /    |\\
- aa\ \ \ aa\ \ bb
+ aa\ \ \ aa\ \ 
 \end{array}
 $$
 
@@ -63,11 +63,19 @@ En el este ejemplo partimos desde el Simbolo incial S, que produce A B X, tomara
 
 Para poder hacer un LL(1) parser is a **Top-Down** se deben cumplir las siguientes reglas:
 
--Ambiguedades: Una regla de producción no puede tener first iguales
+- **Ambiguedades**: Una regla de producción no puede tener first iguales
 
 $$S \to  iaT | ieT\\newline$$
 $$First(iaT)={i}\\newline$$
-$$First8ieT={a,b}\\newline$$
+$$First(ieT)={i}\\newline$$
+
+- **No recursion por izquierda**: Si encuentra recursion por izquierda se forma un bucle al intentar realizar los First's and Follow's
+$$S \to  Sa \\newline$$
+
+- **No determinismo**: no acepta el no determinismo, puesto que el solo puede tener un simbolo de anticipacion
+$$S \to  aA |aB \\newline$$
+$$A \to  d \\newline$$
+$$B \to  c \\newline$$
 
 
 
