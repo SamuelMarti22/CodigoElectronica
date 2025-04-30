@@ -53,8 +53,8 @@ $$
 \begin{array}{c}
          S \\
        / | \ \\
-      A\ B\ x \\
-/    |\\
+      a\ B\ x \\
+     |\\
  aa\ \ \ aa\ \ 
 \end{array}
 $$
