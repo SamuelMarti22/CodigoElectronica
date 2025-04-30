@@ -58,29 +58,28 @@ $$
  aa\ \ \ aa\ \ 
 \end{array}
 $$
+In this example, we start from the initial symbol **S**, which produces **A B X**. The parser will take the leftmost non-terminal (**A**) and perform the possible syntactic derivation until it reaches a terminal symbol, as seen with `aa`. Then, it will continue with **B** and repeat the process, until all non-terminals have been derived. As we can observe, the parsing flow goes from top to bottom and from left to right (**Top-Down, Left-to-Right**).
 
-En el este ejemplo partimos desde el Simbolo incial S, que produce A B X, tomara la izquierda y hará la derivación sintactica posible hasta llegar a un terminal como se ve con aa, después retomara con B y realizará nuevamente el proceso, hasta terminar con cada No terminal previsto, si notamos el flujo va procesando desde la parte superios hasta la inferios de left to right. 
+To build an **LL(1)** parser (i.e., **Top-Down** with **1 lookahead**), the following rules must be satisfied:
 
-Para poder hacer un LL(1) parser is a **Top-Down** se deben cumplir las siguientes reglas:
-
-- **Ambiguedades**: Una regla de producción no puede tener first iguales:
+- **No ambiguities**: A production rule cannot have identical symbols in its **First** sets:
 
 $$S \to  iaT | ieT\\newline$$
 $$First(iaT)={i}\\newline$$
 $$First(ieT)={i}\\newline$$
-
-- **No recursion por izquierda**: Si encuentra recursion por izquierda se forma un bucle al intentar realizar los First's and Follow's
   
+
+- **No left recursion**: Left recursion must be avoided, as it creates an infinite loop when computing the **First** and **Follow** sets:
+
 $$S \to  Sa \\newline$$
 
-- **No determinismo**: no acepta el no determinismo, puesto que el solo puede tener un simbolo de anticipacion
-  
+- **No non-determinism**: Non-deterministic rules are not allowed, because the parser can only use **one lookahead symbol** to decide:
+
 $$S \to  aA |aB \\newline$$
 $$A \to  d \\newline$$
 $$B \to  c \\newline$$
 
-
-
+In this case, both productions of **S** start with the terminal `a`, so the parser cannot decide deterministically.
 
 ### Code for Developing It 💻
 
