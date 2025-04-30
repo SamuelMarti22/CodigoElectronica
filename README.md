@@ -315,7 +315,30 @@ This function prints the syntax analysis process of an LL(1) parser. It creates 
 
 ### Explanation of the Parser 📚
 
-The SLR(1) parser is a **bottom-up** parsing method that reads input from **left to right** and constructs the parse tree from **the leaves (bottom)** to the **root**. It uses one lookahead symbol and considers the **Follow** sets of the grammar for transitions.
+The SLR (Simple LR) parser is a **bottom-up** parsing method that processes the input **left to right**, constructing the parse tree **from bottom to top**. It uses **one lookahead symbol** to decide which production rule to apply or whether to reduce a production. The SLR parser is more powerful than the LL(1) parser because it can handle a broader range of grammars, including some that are not suitable for LL(1) parsing, but it still relies on a single lookahead symbol to make parsing decisions.
+
+$$
+\begin{array}{c}
+         S \\
+       / | \ \\
+      a\ B\ x \\
+     |\\
+     aa\ \ \ 
+\end{array}
+$$
+
+In an SLR parser, the approach is bottom-up, where the parser reads the input left to right, but instead of constructing the parse tree from top to bottom, it reduces the input string to the start symbol, working from the terminals upwards.
+
+In the given example, we start with the input string aa and attempt to reduce it step by step. The first step is to find the rightmost matching production in the grammar and apply it. If we have a rule like:
+
+$$S \to  aBx \\newline$$
+And the current input is aa, the parser starts by identifying that the substring a can be reduced according to the production rule for B, eventually reducing the string down to S. Each step in the reduction process involves finding the leftmost matching production to replace the current sequence of symbols.The process works from the bottom to the top, where each non-terminal is reduced based on the lookahead symbol until the start symbol is reached, which indicates the acceptance of the string. Thus, the flow is bottom-up, with the parsing happening from left to right while reducing and constructing the parse tree.
+
+- **No ambiguities**: A production rule cannot have identical symbols in its **First** sets:
+
+$$S \to  iaT | ieT\\newline$$
+$$First(iaT)={i}\\newline$$
+$$First(ieT)={i}\\newline$$
 
 ### Code for Developing It 🧑‍💻
 
